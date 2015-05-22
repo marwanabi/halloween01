@@ -1,0 +1,136 @@
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.26/skrollr.min.js"></script>
+
+
+
+
+<div id="intro" data-0="position:fixed; background:rgb(17, 3, 45);" data-3000="position:relative; background:rgb(0, 0, 0);">
+   <div id="stjarnor"  data-0="transform:translateY(300px);"    data-3000="transform:translateY(0px);"></div>
+   <img id="mane" 		width="30%" 	src="http://studioacusticum.com/halloween2014/assets/mane2.png"   data-0="transform:translateY(-600px) scale(2);" data-3000="transform:translateY(0px) scale(1);">
+   <img id="acusticum" width="70%" 	src="http://studioacusticum.com/halloween2014/assets/acusticum2.png" data-0="transform:translateY(1000px);" data-3000="transform:translateY(0px);">
+   <img id="pumpa1" 	width="6%" 		src="http://studioacusticum.com/halloween2014/assets/pumpa1.png"  data-0="transform:translateY(1000px);" data-3000="transform:translateY(0px);">
+   <img id="pumpa2" 	width="4%" 		src="http://studioacusticum.com/halloween2014/assets/pumpa2.png"  data-0="transform:translateY(1000px);" data-3000="transform:translateY(0px);">
+   <img id="pumpa3" 	width="4%" 		src="http://studioacusticum.com/halloween2014/assets/pumpa3.png"  data-0="transform:translateY(1000px);" data-3000="transform:translateY(0px);">
+   <img id="fladd1" 	width="11.2%" 	src="http://studioacusticum.com/halloween2014/assets/fladd1.png"  data-300="transform:translateY(1000px) translateX(-300px);" data-3000="transform:translateY(-122px) translateX(-85px);">
+   <img id="fladd2" 	width="3.9%" 	src="http://studioacusticum.com/halloween2014/assets/fladd2.png"  data-2100="transform:translateY(1000px) translateX(200px);" data-3000="transform:translateY(-36px) translateX(-155px);">
+   <img id="fladd3" 	width="5.9%" 	src="http://studioacusticum.com/halloween2014/assets/fladd3.png"  data-2200="transform:translateY(1000px) translateX(0px);" data-3000="transform:translateY(-165px) translateX(37px);">
+   <img id="fladd4" 	width="6.2%" 	src="http://studioacusticum.com/halloween2014/assets/fladd4.png"  data-400="transform:translateY(1000px) translateX(0px);" data-3000="transform:translateY(0px) translateX(0px);">
+   <img id="fladd5" 	width="6.5%" 	src="http://studioacusticum.com/halloween2014/assets/fladd5.png"  data-1100="transform:translateY(1000px) translateX(0px);" data-3000="transform:translateY(0px) translateX(0px);">
+   <img id="fladd6" 	width="3.4%" 	src="http://studioacusticum.com/halloween2014/assets/fladd6.png"  data-1500="transform:translateY(1000px) translateX(200px);" data-3000="transform:translateY(0px) translateX(0px);">
+   <img id="fladd7" 	width="3.6%" 	src="http://studioacusticum.com/halloween2014/assets/fladd7.png"  data-1000="transform:translateY(1000px) translateX(200px);" data-3000="transform:translateY(-36px) translateX(-155px);">
+   <img id="fladd8" 	width="1.8%" 	src="http://studioacusticum.com/halloween2014/assets/fladd8.png"  data-500="transform:translateY(1000px) translateX(200px);" data-3000="transform:translateY(0px) translateX(0px);">
+   <img id="fladd9" 	width="1.3%" 	src="http://studioacusticum.com/halloween2014/assets/fladd9.png"  data-2300="transform:translateY(1000px) translateX(200px);" data-3000="transform:translateY(0px) translateX(0px);">
+   <img id="fladd10" 	width="1.6%" 	src="http://studioacusticum.com/halloween2014/assets/fladd10.png" data-1600="transform:translateY(1000px) translateX(200px);" data-3000="transform:translateY(0px) translateX(0px);">
+   <img id="fladd11" 	width="1.8%" 	src="http://studioacusticum.com/halloween2014/assets/fladd11.png" data-600="transform:translateY(1000px) translateX(200px);" data-3000="transform:translateY(0px) translateX(0px);">
+   <img id="fladd12" 	width="1%" 		src="http://studioacusticum.com/halloween2014/assets/fladd12.png" data-1200="transform:translateY(1000px) translateX(200px);" data-3000="transform:translateY(0px) translateX(0px);">
+   <img id="fladd13" 	width="0.7%" 	src="http://studioacusticum.com/halloween2014/assets/fladd13.png" data-2400="transform:translateY(1000px) translateX(200px);" data-3000="transform:translateY(0px) translateX(0px);">
+   <img id="fladd14" 	width="23%" 	src="http://studioacusticum.com/halloween2014/assets/fladd14.png" data-0="transform:translateY(1000px) translateX(200px);" data-3000="transform:translateY(0px) translateX(-23px);">
+</div>
+
+<div class="walking"/>
+
+<style>
+body, html {
+    height: 100%}
+body {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    background: #030406;
+}
+
+#intro {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #f6701f;
+    overflow: hidden;
+}
+#intro img {
+    position: absolute;
+    bottom: 0;
+    left: 15%}
+#intro #stjarnor {
+    background: url('http://studioacusticum.com/halloween2014/assets/stjarnor2.png');
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    margin-top: -25%}
+#intro #mane {
+    left: 0;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.62) 0, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.62)), color-stop(58%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.62) 0, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.62) 0, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.62) 0, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.62) 0, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9effffff', endColorstr='#00ffffff', GradientType=1);
+    padding: 35% 35%;
+    margin-bottom: -35%}
+#intro #pumpa1 {
+    left: 57%}
+#intro #pumpa2 {
+    left: 62.7%}
+#intro #pumpa3 {
+    left: 53.5%}
+#intro #fladd1 {
+    left: 32%}
+#intro #fladd2 {
+    left: 33%}
+#intro #fladd3 {
+    left: 33%}
+#intro #fladd4 {
+    left: 28%}
+#intro #fladd5 {
+    left: 25%}
+#intro #fladd6 {
+    left: 30%}
+#intro #fladd7 {
+    left: 33%}
+#intro #fladd8 {
+    left: 31%}
+#intro #fladd9 {
+    left: 31%}
+#intro #fladd10 {
+    left: 37%}
+#intro #fladd11 {
+    left: 31%}
+#intro #fladd12 {
+    left: 36%}
+#intro #fladd13 {
+    left: 37%}
+#intro #fladd14 {
+    left: 55%}
+
+
+.walking {
+  background: url("http://sarahdrasnerdesign.com/waydownwhen/img/top/walk-cycle.png") 0 0 no-repeat; 
+  height: 133px;
+  width: 91px;
+  position: absolute;
+  z-index:200;
+  bottom: 55px; 
+ left: 450;
+  -webkit-animation: walking 1s 2.5s steps(5) 21, across 1s linear 2.5s both;
+}
+
+@-webkit-keyframes walking {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -364px 0; } 
+}
+
+
+</style>
+
+
+<script>
+$(document).ready(function(){
+		skrollr.init();
+
+		$('#scrolldown').click(function(){
+		$('html, body').animate({scrollTop : 3350},5000);
+			return false;
+		});
+});
+</script>
